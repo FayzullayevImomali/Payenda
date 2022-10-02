@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,400&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&display=swap')
+
+:root
+    --main-blue: #4673DB
+    --navbar-bg: linear-gradient(to right ,#F26920, #DA9D1B)
+
+*, body
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Ubuntu', sans-serif
+
+.nav
+    position: relative
+    padding: .7rem 1rem
+    background-image: linear-gradient(to right ,#F26920, #DA9D1B)
+    display: flex
+    align-items: center
+.gamburger
+    display: none
+.container
+    padding: 0
+    margin: 0
+    width: 1050px
+    margin: 0 auto
+.hidden
+    display: none
+.navbar
+    width: 100%
+    display: flex
+    align-items: center
+.navbar-brand
+    min-width: 165px
+    font-size: 25px
+    color: #fff
+    font-weight: 700
+.navbar-content
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+.navbar-links
+    width: 100%
+    ul
+        display: flex
+        justify-content: space-evenly
+        list-style: none
+        li a
+            text-decoration: none
+            color: #fff
+            font-size: 18px
+            letter-spacing: 1px
+            padding: .7rem
+            border-radius: 4px
+            &:hover
+                background-color: #C3C1BD
+                transition: all 0.3s
+.form form
+    width: 100%
+    display: flex
+    input, button
+        border-radius: 4px
+        outline: none
+        border: none
+
+    input
+        padding: .5rem .7rem
+    button
+        margin-left: 4px
+        padding: .5rem
+        color: #4673DB
+        &:hover
+            border: none
+            color: #fff
+            background-color: #4673DB
+.search
+    display: none
+
+@import 'responsive'
