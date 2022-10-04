@@ -19,7 +19,6 @@ dropDown.forEach((btns) => {
     btns.addEventListener('click', (e) => {
         e.preventDefault;
         const dropdown = e.currentTarget.nextElementSibling;
-        document.querySelector('.dropdown-list').classList.toggle('dropdown-list-active');
-    })
-
+        dropdown.classList.toggle('dropdown-list-active');
+    });
 });
