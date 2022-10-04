@@ -13,25 +13,16 @@ gamburger.addEventListener('click', () => {
     navbarContent.classList.toggle('navbar-content-active');
 });
 
+
 dropDown.forEach((btns) => {
     btns.addEventListener('click', (e) => {
         e.preventDefault;
         const dropdown = e.currentTarget.nextElementSibling;
         dropdown.classList.toggle('dropdown-list-active');
 
-        document.querySelectorAll('.dropdown-list + .dropdown-btn').forEach((element ) => {
-            if(element !== e.currentTarget.nextElementSibling) {
-                dropdown.classList.remove('dropdown-list-active');
-            }
-        });
+        
     });
 });
 
-window.onclick = (e) => {
-    if(!e.target.matches('.dropdown-list')) {
-        const dropdowns = document.querySelectorAll('.dropdown-list');
-        dropdowns.forEach((btns) => {
-            btns.classList.remove('dropdown-list-active');
-        });
-    }
-};
+
+
