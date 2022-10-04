@@ -12,6 +12,7 @@ gamburger.addEventListener('click', () => {
     gamburger.classList.toggle('active-gamburger');
     navbarContent.classList.toggle('navbar-content-active');
 });
+<<<<<<< HEAD
 
 dropDown.forEach((btns) => {
     btns.addEventListener('click', (e) => {
@@ -35,3 +36,13 @@ window.onclick = (e) => {
         });
     }
 };
+=======
+
+dropDown.forEach((btns) => {
+    btns.addEventListener('click', (e) => {
+        e.preventDefault;
+        const dropdown = e.currentTarget.nextElementSibling;
+        dropdown.classList.toggle('dropdown-list-active');
+    });
+});
+>>>>>>> aac8c80647db95fca4d8dd28dcef35c29d0e55a3
