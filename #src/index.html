@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -21,8 +22,24 @@
                     <div class="navbar-links">
                         <ul>
                             <li class="navbar-items"><a href="#" class="items-links">News</a></li>
-                            <li class="navbar-items"><a href="#" class="items-links">About</a></li>
-                            <li class="navbar-items"><a href="#" class="items-links">Home</a></li>
+                            <li class="navbar-items dropdown"><a href="#" class="items-links dropdown-btn">
+                                About <i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-list">
+                                    <a href="#" class="dropdown-link">link 1</a>
+                                    <a href="#" class="dropdown-link">link 2</a>
+                                    <a href="#" class="dropdown-link">link 3</a>
+                                    <a href="#" class="dropdown-link">link 4</a>
+                                </div>
+                            </li>
+                            <li class="navbar-items dropdown"><a href="#" class="items-links dropdown-btn">Home
+                                <i class="fas fa-caret-down"></i></a> 
+                                <div class="dropdown-list">
+                                    <a href="#" class="dropdown-link">link 5</a>
+                                    <a href="#" class="dropdown-link">link 6</a>
+                                    <a href="#" class="dropdown-link">link 7</a>
+                                    <a href="#" class="dropdown-link">link 8</a>
+                                </div>
+                            </li>
                             <li class="navbar-items"><a href="#" class="items-links">Contacts</a></li>
                             <li class="navbar-items"><a href="#" class="items-links">Support</a></li>
                         </ul>

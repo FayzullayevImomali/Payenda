@@ -113,6 +113,39 @@ body {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 35px;
+  width: 180px;
+  padding: 0px;
+  background-image: linear-gradient(to right, #F26920, #DA9D1B);
+  height: 0px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.dropdown-list .dropdown-link {
+  color: #000;
+}
+
+.dropdown-list .dropdown-link:hover {
+  color: #fff;
+}
+
+.dropdown-list a {
+  display: block;
+  color: #000;
+}
+
+.dropdown-list-active {
+  height: 191px;
+}
+
 @media (max-width: 992px) {
   .form {
     display: none;
