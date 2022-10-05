@@ -1,5 +1,3 @@
-'use strict';
-
 const search = document.querySelector('.search');
 const hiddenForm = document.querySelector('.hidden');
 const gamburger = document.querySelector('.gamburger');
@@ -15,10 +13,16 @@ gamburger.addEventListener('click', () => {
     navbarContent.classList.toggle('navbar-content-active');
 });
 
+
 dropDown.forEach((btns) => {
     btns.addEventListener('click', (e) => {
         e.preventDefault;
         const dropdown = e.currentTarget.nextElementSibling;
         dropdown.classList.toggle('dropdown-list-active');
+
+        
     });
 });
+
+
+
