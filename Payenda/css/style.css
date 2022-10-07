@@ -131,6 +131,7 @@ body {
   height: 0px;
   overflow: hidden;
   transition: height 0.2s ease-in-out;
+  z-index: 10;
 }
 
 .dropdown-list .dropdown-link {
